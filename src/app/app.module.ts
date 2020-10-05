@@ -14,12 +14,14 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { FrameworkComponent } from './framework/framework.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatCardModule } from '@angular/material/card';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomePageComponent,
-    FrameworkComponent
+    FrameworkComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

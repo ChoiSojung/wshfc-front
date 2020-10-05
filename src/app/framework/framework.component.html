@@ -3,11 +3,11 @@
         <button mat-icon-button>
             <mat-icon (click)='sidenav.toggle()'>menu</mat-icon>
         </button>
-        <h1>WSHFC</h1>
+        <h1><a routerLink="">WSHFC</a></h1>
         <span class="menu-spacer">
         </span>
         <div>
-            <a mat-button [routerLink]="">Accounts</a>
+            <a mat-button routerLink="/about">About</a>
         </div>
     </mat-toolbar-row>
     <mat-toolbar-row>
@@ -36,6 +36,12 @@
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
+
+<mat-card>
+    <mat-card-footer align="end">
+        
+    </mat-card-footer>
+</mat-card>
 
 
   
