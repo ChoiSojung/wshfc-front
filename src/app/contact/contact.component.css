@@ -1,0 +1,49 @@
+mat-card {
+    width: 50%;
+  }
+  
+  .text-center > * {
+    text-align: center;
+  }
+  
+  .phone {
+    font-size: 40px;
+  }
+  
+  mat-icon {
+    color: #777;
+  }
+  
+  .email-tab > input {
+    width: 100%;
+  }
+  
+  mat-select, mat-field {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  textarea {
+    min-height: 100px;
+  }
+  
+  .submit-area {
+    padding: 15px;
+  }
+  
+  .submit-button-area {
+    margin: 10px 0;
+  }
+  
+  @media (max-width: 698px) {
+    mat-card {
+      width: 100%;
+    }
+  }

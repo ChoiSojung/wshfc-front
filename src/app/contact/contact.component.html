@@ -1,1 +1,130 @@
-<p>contact works!</p>
+<div class="parent">
+    <mat-card>
+        <h1>Get in Touch!</h1>
+        <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="Phone">
+                <div class="text-center">
+                    <h3>Give us a call</h3>
+                    <p class="phone">
+                        <mat-icon>phone</mat-icon>
+                        (206) 464-7139
+                    </p>
+                    <p>
+                        <small>Open Monday to Friday, 9am - 5pm</small>
+                    </p>
+                </div>
+
+            </mat-tab>
+        </mat-tab-group>
+        <mat-tab-group mat-align-tabs="center">
+            <mat-tab label="Email" class="email-tab">
+                <div class="text-center">
+                    <h3>Send us a message!</h3>
+                    
+                </div>
+                <div class="parent">
+                    <mat-form-field appearance="fill" [style.width.px]=400>
+                        <input matInput placeholder="Subject" name="subject">
+                    </mat-form-field>
+                </div>
+                <br>
+                <div class="parent">
+                    <mat-form-field appearance="fill" [style.width.px]=400>
+                        <input matInput placeholder="Email" name="email" type="email">
+                    </mat-form-field>
+                </div>
+                <br>
+                <div class="parent">
+                    <mat-form-field appearance="fill" [style.width.px]=400>
+                        <textarea matInput placeholder="Write your message here" name="message">
+                        </textarea>
+                    </mat-form-field>
+                </div>
+
+                <div class="parent">
+                    <div class="submit-area">
+                        <mat-checkbox name="optIn">
+                            Sign me up for the mailing list!
+                        </mat-checkbox>
+                        <div class="submit-button-area">
+                            <button mat-raised-button type="submit" name="submit">
+                                Submit
+                            </button>
+
+                            <button mat-raised-button type="button">
+                                Clear
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </mat-tab>
+        </mat-tab-group>
+        
+        
+        
+    </mat-card>
+</div>
+<!-- <mat-card>
+    <h1>Get in Touch!</h1>
+    <mat-tab-group>
+        <mat-tab label="Phone">
+            <div class="text-center">
+                <h3>Give us a call!</h3>
+                <p class="phone">
+                    <mat-icon>phone</mat-icon>
+                    <strong> 1-800-HOME</strong>
+                </p>
+                <p>
+                    <small>Open Monday to Friday, 9am - 5pm</small>
+                </p>
+            </div>
+        </mat-tab>
+    </mat-tab-group>
+
+    <mat-tab-group>
+        <mat-tab label="Email" class="email-tab">
+            <div class="text-center">
+                <h3>Send us a message!</h3>
+                
+            </div>
+            <form #contactForm="ngForm" (ngSubmit)="onContactFormSubmit(contactForm.value)">
+                
+                <mat-form-field appearance="fill">
+                    <mat-select name="subject" id="subject-select" placeholder="Subject" ngModel>
+                        <mat-option *ngFor="let reason of contactReasons" [value]="reasons.value">
+                            {{ reason.viewValue }}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+                
+                <mat-form-field appearance="fill">
+                    <mat-label>Email</mat-label>
+                    <input matInput placeholder="Email" name="email" type="email" ngModel>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Write your message here</mat-label>
+                    <textarea matInput name="message" placeholder="Write your message" ngModel>
+                    </textarea>
+                </mat-form-field>
+
+                <div class="submit-area">
+                    <mat-checkbox name="optIn" ngModel>
+                        Sign me up for the mailing list!
+                    </mat-checkbox>
+                    <div class="submit-button-area">
+                        <button mat-raised-button type="submit" name="submit" [disabled]="!contactForm.value.message">
+                            Submit
+                        </button>
+
+                        <button mat-raised-button type="button" (click)="onContactFormClear()">
+                            Clear
+                        </button>
+                    </div>
+                </div>
+
+                <mat-progress-bar mode="indeterminate" *ngIf="contactForm.submitting"></mat-progress-bar>
+            </form>
+        </mat-tab>
+    </mat-tab-group>
+</mat-card> -->
