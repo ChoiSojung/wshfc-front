@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { MatIconRegistry } from '@angular/material/icon';
 
 
 @Component({
@@ -8,7 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FrameworkComponent implements OnInit {
 
-  constructor() { }
+  constructor(iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIcon(
+      'twitter',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/images/Twitter_Social_Icon_Circle_White.svg'));
+   }
 
   ngOnInit(): void {
   }
