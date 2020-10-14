@@ -1,0 +1,21 @@
+.parent {
+    display: flex;
+    background-color: Dodgerblue;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.parent > div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+}

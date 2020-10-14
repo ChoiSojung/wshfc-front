@@ -25,12 +25,16 @@
     </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container>
+<div class="container content">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- <mat-sidenav-container>
     <mat-sidenav #sidenav>
         <mat-nav-list>
 
-        <a mat-list-item [routerLink]="'/'"> News and Highlights </a>
-        <a mat-list-item [routerLink]="'/'"> About Us </a>
+        <a mat-list-item [routerLink]="'/profile'"> News and Highlights </a>
+        <a mat-list-item [routerLink]="'/about'"> About Us </a>
         <a mat-list-item [routerLink]="'/contact'"> Contact Us </a>
         <a mat-list-item [routerLink]="'/'"> Programs </a>
         <a mat-list-item [routerLink]="'/'"> Careers with WSHFC </a>
@@ -45,10 +49,10 @@
         <router-outlet></router-outlet>
         </div>
     </mat-sidenav-content>
-</mat-sidenav-container>
+</mat-sidenav-container> -->
 
 <div class="footer" #footer>
-    © 2020 Copyright: Washington State Housing Finance Commission
+    <small>1000 Second Ave, Suite 2700 Seattle, WA &copy; 2020. All rights reserved.</small>
 </div>
 
 
