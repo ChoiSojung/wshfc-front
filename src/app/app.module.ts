@@ -24,6 +24,7 @@ import { ContactComponent } from './contact/contact.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
+import { MatCarouselModule } from '@ngmodule/material-carousel';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { LoginComponent } from './login/login.component';
     FlexLayoutModule,
     MatCardModule,
     MatGridListModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatCarouselModule.forRoot(),
   ],
   providers: [],
   bootstrap: [FrameworkComponent]
